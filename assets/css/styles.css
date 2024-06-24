@@ -1,0 +1,436 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body,.btn {
+    font-family: 'SF Pro Display';
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #1D1D1F;
+}
+
+/* ----------------common----------------------- */
+.container {
+    background-color: white;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 18px;
+}
+
+.content-support {
+    margin-top: 68px;
+    padding: 24px 0;
+    background-color: #f5f5f7;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.info-title {
+    padding: 40px 8.33%;
+}
+
+.info-title a {
+    margin-top: 13.6px;
+}
+
+.title {
+    font-weight: 600;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 4.0rem;
+    line-height: 1.1;
+}
+
+.title-desc {
+    line-height: 1.47;
+    margin-top: 13.6px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/* -----------------hero-banner---------------- */
+.hero-banner img {
+    width: 100%;
+    height: 540px;
+    object-fit: cover;
+}
+
+/* -------------------Apple Support------------------------------ */
+.apple-support {
+    margin-top: 68px;
+    background-color: #fff;
+}
+
+.apple-support .title-head {
+    font-size: 6.4rem;
+}
+
+.apple-support .support-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.apple-support .item-sp {
+    text-align: center;
+    margin-top: 54px
+}
+
+.apple-support .item-sp .label {
+    margin-top: 16px;
+    width: 100%;
+    color: #1D1D1F;
+}
+
+.apple-support .item-sp a:hover {
+    color: inherit;
+}
+
+.apple-support .info-sp {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 68px;
+    gap: 24px;
+}
+
+.apple-support .item-info-sp {
+    width: calc(100% / 3);
+    border-radius: 18px;
+    text-align: center;
+    background-color: #f5f5f7;
+    box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.08);
+}
+
+.apple-support .info-sp a {
+    display: block;
+    padding: 40px 26px;
+}
+
+.apple-support .info-sp img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.apple-support .info-sp p {
+    margin-top: 16px;
+    line-height: 25px;
+}
+
+.apple-support .item-info-sp {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s
+}
+
+.apple-support .item-info-sp:hover {
+    transform: scale(1.03);
+}
+
+/* ----------thanh search--------- */
+.search h2 {
+    margin: 71px 0 64px;
+}
+
+.search form {
+    position: relative;
+}
+
+.search form img {
+    position: absolute;
+    width: 20px;
+    top: 17px;
+    left: 15px;
+}
+
+.search form .label-search {
+    position: absolute;
+    color: #86868b;
+    z-index: 0;
+    top: 20px;
+    left: 50px;
+}
+
+.search input:focus .label-search {
+    font-size: 12px;
+    margin-top: -3px;
+}
+
+
+.search input {
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+    height: 56px;
+}
+
+.search input[type=text] {
+    width: 100%;
+    font-size: 17px;
+    padding: 18px 49px 0 49px;
+}
+
+.search input[type=text]:focus {
+    outline: none;
+    border: 4px solid rgba(0, 125, 250, 0.6);
+    border-radius: 12px 12px 0 0;
+}
+
+.search-desc {
+    display: none;
+    transition-delay: 3s;
+    border: 1px solid #d2d2d7;
+    border-top: none;
+    padding-bottom: 30px;
+}
+
+.search-desc p {
+    color: #515154;
+    padding: 20px 49px 12px;
+}
+
+.search-desc ul a {
+    color: #1D1D1F;
+    display: block;
+    font-size: 1.6rem;
+    padding: 8px 0 8px 62px;
+    margin: 0 2px;
+}
+
+.search-desc ul a:hover {
+    text-decoration: none;
+    color: #0066cc;
+    background-color: #cccccc40;
+    border-radius: 8px;
+}
+
+
+/* ======================apple support on youtube  & apple store =================================== */
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link img,
+.as-link img {
+    margin-left: 5px;
+    width: 10px;
+    margin-top: 2px;
+}
+
+.apple-sp-youtube .link img {
+    transform: rotate(-45deg);
+}
+
+.img-link {
+    width: 100%;
+    border-radius: 0 0 18px 18px;
+    vertical-align: bottom;
+}
+
+.apple-store {
+    margin-top: 24px;
+}
+
+/* ========================Get - app================================= */
+.get-app {
+    margin-top: 70px;
+    display: flex;
+    gap: 24px;
+}
+
+.get {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    align-items: center;
+    width: 75%;
+}
+
+.get-img-link {
+    margin-top: 48px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.get .btn-get {
+    background-color: #1D1D1F;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 990px;
+
+}
+
+.get .btn-get:hover {
+    text-decoration: none;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 35%
+}
+
+.app .link img {
+    transform: rotate(-45deg);
+}
+
+.app-img-link {
+    width: 262px;
+    height: 262px;
+    object-fit: cover;
+}
+
+/* ---------------My-support ---------------- */
+.my-support {
+    margin-top: 70px;
+}
+
+/* ---------------Apple care , apple trade in , safe-reliable---------------- */
+.apple-care,
+.apple-trade-in,
+.safe-reliable {
+    margin-top: 24px;
+}
+
+/* -----------------------counterfeit parts - gift card------------------------ */
+.counterfeit-gift .container {
+    display: flex;
+    margin-top: 24px;
+    background-color: #f5f5f7;
+    gap: 24px;
+}
+
+.counterfeit-gift .title,
+.counterfeit-gift .title-desc {
+    text-align: left;
+}
+
+.counterfeit-parts,
+.gift-card {
+    background-color: #fff;
+    border-radius: 18px;
+}
+
+.counterfeit-parts {
+    width: 70%;
+}
+
+.gift-card {
+    width: 30%;
+}
+
+.gift-card .info-title>img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+}
+
+.gift-card a {
+    display: inline-block;
+    text-align: left;
+}
+
+/* ---------------Apple Service Programs----------------- */
+.service-programs {
+    padding: 69px 0 74px;
+}
+
+.service-programs .container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+}
+
+.service-programs .title,
+.service-programs .link {
+    display: block;
+    text-align: left;
+}
+
+/* ====================footer=========================== */
+.footer-support,
+.footer-support .container {
+    background-color: #f5f5f7;
+}
+
+.header-footer {
+    display: flex;
+    align-items: center;
+    padding: 17px 0;
+}
+
+.header-footer .logo-apple {
+    margin-right: 11px;
+    width: 14px;
+    height: 18px;
+}
+
+.header-footer .right-arrow {
+    margin-right: 11px;
+    width: 8px;
+    height: 12px;
+    object-fit: cover;
+}
+
+.content-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-footer .label-column {
+    color: #1D1D1F;
+    font-weight: bold;
+}
+
+.content-footer li {
+    margin-top: 10px;
+}
+
+.footer-support a {
+    color: #515154;
+}
+
+.ft-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d2d2d7;
+    padding-top: 10px;
+    padding-bottom: 21px;
+    margin-top: 42px;
+}
+
+.ft-footer ul {
+    display: flex;
+}
+
+.ft-footer ul a {
+    padding: 0 10px;
+}
+
+.ft-footer ul li:not(:nth-child(n+5)) {
+    border-right: 1px solid #d2d2d7;
+}
+
+.ft-footer ul li:last-child a {
+    margin-left: 250px;
+    padding-left: 10px;
+    padding-right: 0;
+}
